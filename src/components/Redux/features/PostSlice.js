@@ -28,7 +28,7 @@ export const createPost = createAsyncThunk(
         }).then((res) => res.json());
     }
 )
-const PostSlice = createSlice ({
+const counterSlice = createSlice ({
     name : 'post',
     initialState : {
         loading : false,
@@ -73,4 +73,4 @@ const PostSlice = createSlice ({
 })
 
 
-export default PostSlice.reducer;
+export default counterSlice.reducer;
